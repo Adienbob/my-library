@@ -18,8 +18,10 @@ const Hero = () => {
 
           {/* Heading */}
           <h1 className="animate-fade-up stagger-1 mb-6 text-4xl font-bold tracking-tight text-foreground opacity-0 sm:text-5xl lg:text-6xl">
-            مركز{" "}
-            <span className="text-gradient">الموارد والمستندات</span>
+            <span className="text-gradient">إغاثة </span>
+            المحتار{" "}
+            <span className="text-gradient">فى فهم أسئلة </span>
+            الاختبار{" "}
           </h1>
 
           {/* Description */}
@@ -35,7 +37,7 @@ const Hero = () => {
                 <FileText className="h-5 w-5 text-primary" />
               </div>
               <div className="text-start">
-                <p className="text-2xl font-bold text-foreground">+6</p>
+                <p className="text-2xl font-bold text-foreground">+10</p>
                 <p className="text-sm text-muted-foreground">مستندات</p>
               </div>
             </div>
