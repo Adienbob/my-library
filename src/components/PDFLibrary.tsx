@@ -3,14 +3,14 @@ import { pdfLibrary } from "@/data/pdfData";
 import PDFCard from "./PDFCard";
 
 const PDFLibrary = () => {
-  const [selectedCategory, setSelectedCategory] = useState<string>("All");
+  const [selectedCategory, setSelectedCategory] = useState<string>("الكل");
 
   // Get unique categories
-  const categories = ["All", ...new Set(pdfLibrary.map((pdf) => pdf.category))];
+  const categories = ["الكل", ...new Set(pdfLibrary.map((pdf) => pdf.category))];
 
   // Filter PDFs by category
   const filteredPDFs =
-    selectedCategory === "All"
+    selectedCategory === "الكل"
       ? pdfLibrary
       : pdfLibrary.filter((pdf) => pdf.category === selectedCategory);
 
@@ -20,10 +20,10 @@ const PDFLibrary = () => {
         {/* Section header */}
         <div className="mb-10 text-center">
           <h2 className="mb-3 text-2xl font-bold text-foreground sm:text-3xl">
-            Document Library
+            مكتبة المستندات
           </h2>
           <p className="mx-auto max-w-xl text-muted-foreground">
-            Browse our collection of documents and download the ones you need.
+            تصفح مجموعتنا من المستندات وقم بتحميل ما تحتاجه.
           </p>
         </div>
 
@@ -55,7 +55,7 @@ const PDFLibrary = () => {
         {filteredPDFs.length === 0 && (
           <div className="py-16 text-center">
             <p className="text-lg text-muted-foreground">
-              No documents found in this category.
+              لا توجد مستندات في هذا التصنيف.
             </p>
           </div>
         )}
