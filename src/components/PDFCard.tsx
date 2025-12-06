@@ -56,7 +56,7 @@ const PDFCard = ({ pdf, index }: PDFCardProps) => {
             className="gap-2"
           >
             <Download className="h-4 w-4" />
-            Download
+            تحميل
           </Button>
         </div>
       </div>

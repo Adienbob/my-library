@@ -9,10 +9,10 @@ const Footer = () => {
             <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
               <FileText className="h-4 w-4" />
             </div>
-            <span className="font-semibold text-foreground">DocVault</span>
+            <span className="font-semibold text-foreground">خزينة المستندات</span>
           </div>
           <p className="flex items-center gap-1.5 text-sm text-muted-foreground">
-            Made with <Heart className="h-4 w-4 text-primary" /> for easy document access
+            صُنع بـ <Heart className="h-4 w-4 text-primary" /> لسهولة الوصول إلى المستندات
           </p>
         </div>
       </div>
