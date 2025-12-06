@@ -1,0 +1,2 @@
+# Place your PDF files in this folder
+# Then update src/data/pdfData.ts with the file names
